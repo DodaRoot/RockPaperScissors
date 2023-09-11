@@ -1,0 +1,117 @@
+/* Setting the ground */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(images/RPS-background.jpg);
+    background-color: rgb(255, 185, 92);
+}
+
+.allFather {
+    color: aliceblue;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5% 5% 15% 5%;
+    background-color: rgb(101, 101, 250, 0.4);
+}
+
+.header {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.choises {
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+}
+
+.choises h3 {
+    text-align: center;
+}
+
+#playerCard {
+    border: 4px solid black;
+    border-radius: 10px;
+    padding: 100px;
+}
+
+#computerCard {
+    border: 4px solid black;
+    border-radius: 10px;
+    padding: 100px;
+}
+
+.cards {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+#card-rock {
+    opacity: 0.5;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 80px;
+    background: center url(images/rock.jpeg);
+    background-size: contain;
+}
+
+#card-rock:hover {
+    opacity: 1;
+}
+
+#card-paper {
+    opacity: 0.5;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 80px;
+    background: center url(images/paper.png);
+    background-size: contain;
+}
+
+#card-paper:hover {
+    opacity: 1;
+}
+
+#card-scissors {
+    opacity: 0.5;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 80px;
+    background: center url(images/scissors.jpg);
+    background-size: contain;
+}
+
+#card-scissors:hover {
+    opacity: 1;
+}
+
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.text {
+    text-align: center;
+}
+
+#you {
+    text-align: center;
+}
+
+#computer {
+    text-align: center;
+}
