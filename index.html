@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RockPaperScissors</title>
+    <title>GUI for rock paper scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" async></script>
 </head>
 <body>
-    
+    <div class="allFather">
+            <div class="header">
+                <h1 class="title">Chose youre weapon</h1>
+                <h2 id="GameRound">Rounds are displayed here</h2>
+            </div>
+
+            <div class="choises">
+                <div>
+                    <div id="playerCard"></div>
+                    <h3 id="you">You = 0</h3>
+                </div>
+                <div>
+                    <div id="computerCard"></div>
+                    <h3 id="computer">Computer = 0</h3>
+                </div>
+                
+            </div>
+            <div class="cards">
+                <button><div id="card-rock"></div></button>
+                <button><div id="card-paper"></div></button>
+                <button><div id="card-scissors"></div></button>
+            </div>
+            <div class="text">
+                <h2 id="WinCount"></h2>
+                <h2 id="gameOver"></h2>
+            </div>
+    </div>
 </body>
 </html>
