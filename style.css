@@ -14,7 +14,7 @@ body {
     color: aliceblue;
     border: 2px solid black;
     border-radius: 15px;
-    margin: 5%;
+    margin: 2%;
     background-color: rgba(61, 61, 254, 0.4);
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 .choises {
-    margin-top: 8%;
+    margin-top: 4%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,7 @@ body {
 }
 
 .cards {
-    margin: 5%;
+    margin: 4%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,4 +110,15 @@ button {
 
 #computer {
     text-align: center;
+}
+
+.play-again {
+    text-align: center;
+    margin: 0% 20% 5% 20%;
+    color: aliceblue;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(255, 0, 0);
+    visibility: hidden;
+    cursor: pointer;
 }

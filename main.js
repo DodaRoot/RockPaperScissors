@@ -9,6 +9,7 @@ let winCount = document.getElementById('WinCount')
 let playScore = document.getElementById('you')
 let compScore = document.getElementById('computer')
 let gameOver = document.getElementById('gameOver')
+let playAgain = document.getElementById('play-again')
 let choise = '';
 let compGuess = '';
 let Round = 0
@@ -179,11 +180,12 @@ function round () {
             console.log('Game Over');
             gameOver.innerHTML = 'Game Over Player Wins';
             round = null;
+            playAgain.style.visibility = "unset"
         }
         else if  (cScore > 4) {
             console.log('Game Over');
             gameOver.innerHTML = 'Game Over Computer Wins';
             round = null;
+            playAgain.style.visibility = "unset"
         }        
 }    
-
