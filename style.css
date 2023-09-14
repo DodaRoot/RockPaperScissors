@@ -6,16 +6,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(images/RPS-background.jpg);
+    background-image: url(images/BackGround.jpg);
     background-color: rgb(255, 185, 92);
 }
 
 .allFather {
     color: aliceblue;
-    border: 2px solid black;
+    border: 3px solid rgb(255, 252, 252);
     border-radius: 15px;
     margin: 2%;
-    background-color: rgba(61, 61, 254, 0.4);
+    background-color: rgba(0, 0, 255, 0.0);
 }
 
 .header {
@@ -32,13 +32,13 @@ body {
 }
 
 #playerCard {
-    border: 2px solid black;
+    border: 2px solid rgb(0, 238, 8);
     border-radius: 10px;
     padding: 100px;
 }
 
 #computerCard {
-    border: 2px solid black;
+    border: 2px solid rgb(255, 0, 0);
     border-radius: 10px;
     padding: 100px;
 }
@@ -53,10 +53,10 @@ body {
 
 #card-rock {
     opacity: 0.5;
-    border: 3px solid black;
-    border-radius: 10px;
+    border: 3px solid rgb(0, 0, 255);
+    border-radius: 70px;
     padding: 80px;
-    background: center url(images/rock.jpeg);
+    background: center url(images/Rock.jpg);
     background-size: contain;
 }
 
@@ -66,10 +66,10 @@ body {
 
 #card-paper {
     opacity: 0.5;
-    border: 3px solid black;
-    border-radius: 10px;
+    border: 3px solid rgb(255, 179, 0);
+    border-radius: 70px;
     padding: 80px;
-    background: center url(images/paper.png);
+    background: center url(images/Paper.jpg);
     background-size: contain;
 }
 
@@ -79,10 +79,10 @@ body {
 
 #card-scissors {
     opacity: 0.5;
-    border: 3px solid black;
-    border-radius: 10px;
+    border: 3px solid rgb(0, 255, 187);
+    border-radius: 70px;
     padding: 80px;
-    background: center url(images/scissors.jpg);
+    background: center url(images/Scissors.jpg);
     background-size: contain;
 }
 

@@ -10,6 +10,7 @@ let playScore = document.getElementById('you')
 let compScore = document.getElementById('computer')
 let gameOver = document.getElementById('gameOver')
 let playAgain = document.getElementById('play-again')
+let back = document.querySelector('.allFather')
 let choise = '';
 let compGuess = '';
 let Round = 0
@@ -72,17 +73,17 @@ function round () {
             if (compGuess == 'rock'){
                 console.log('Draw - both chose rock')
                 winCount.innerHTML = 'Draw - both chose rock';
-                playerCard.style.background = 'center url(images/rock.jpeg)';
+                playerCard.style.background = 'center url(images/Rock.jpg)';
                 playerCard.style.backgroundSize = 'contain';
-                computerCard.style.background = 'center url(images/rock.jpeg)';
+                computerCard.style.background = 'center url(images/Rock.jpg)';
                 computerCard.style.backgroundSize = 'contain';
             }
             else if (compGuess == 'paper') {
                 console.log('Computer Wins - paper beats rock')
                 winCount.innerHTML = 'Computer Wins - paper beats rock';
-                playerCard.style.background = 'center url(images/rock.jpeg)';
+                playerCard.style.background = 'center url(images/Rock.jpg)';
                 playerCard.style.backgroundSize = 'contain';
-                computerCard.style.background = 'center url(images/paper.png)';
+                computerCard.style.background = 'center url(images/Paper.jpg)';
                 computerCard.style.backgroundSize = 'contain';
                 //
                 cScore = cScore + 1;
@@ -91,9 +92,9 @@ function round () {
             else if (compGuess == 'scissors') {
                 console.log('Player Wins - rock beats scissors')
                 winCount.innerHTML = 'Player Wins - rock beats scissors';
-                playerCard.style.background = 'center url(images/rock.jpeg)';
+                playerCard.style.background = 'center url(images/Rock.jpg)';
                 playerCard.style.backgroundSize = 'contain';
-                computerCard.style.background = 'center url(images/scissors.jpg)';
+                computerCard.style.background = 'center url(images/Scissors.jpg)';
                 computerCard.style.backgroundSize = 'contain';
                 //
                 pScore = pScore + 1;
@@ -107,17 +108,17 @@ function round () {
             if (compGuess == 'paper'){
                 console.log('Draw - both chose paper')
                 winCount.innerHTML = 'Draw - both chose paper';
-                playerCard.style.background = 'center url(images/paper.png)';
+                playerCard.style.background = 'center url(images/Paper.jpg)';
                 playerCard.style.backgroundSize = 'contain';
-                computerCard.style.background = 'center url(images/paper.png)';
+                computerCard.style.background = 'center url(images/Paper.jpg)';
                 computerCard.style.backgroundSize = 'contain';
             }
             else if (compGuess == 'rock') {
                 console.log('Player Wins - paper beats rock')
                 winCount.innerHTML = 'Player Wins - paper beats rock';
-                playerCard.style.background = 'center url(images/paper.png)';
+                playerCard.style.background = 'center url(images/Paper.jpg)';
                 playerCard.style.backgroundSize = 'contain';
-                computerCard.style.background = 'center url(images/rock.jpeg)';
+                computerCard.style.background = 'center url(images/Rock.jpg)';
                 computerCard.style.backgroundSize = 'contain';
                 //
                 pScore = pScore + 1;
@@ -126,9 +127,9 @@ function round () {
             else if (compGuess == 'scissors') {
                 console.log('Computer Wins - scissors beat paper')
                 winCount.innerHTML = 'Computer Wins - scissors beat paper';
-                playerCard.style.background = 'center url(images/paper.png)';
+                playerCard.style.background = 'center url(images/Paper.jpg)';
                 playerCard.style.backgroundSize = 'contain';
-                computerCard.style.background = 'center url(images/scissors.jpg)';
+                computerCard.style.background = 'center url(images/Scissors.jpg)';
                 computerCard.style.backgroundSize = 'contain';
                 //
                 cScore = cScore + 1;
@@ -142,17 +143,17 @@ function round () {
             if (compGuess == 'scissors'){
                 console.log('Draw - both chose scissors')
                 winCount.innerHTML = 'Draw - both chose scissors';
-                playerCard.style.background = 'center url(images/scissors.jpg)';
+                playerCard.style.background = 'center url(images/Scissors.jpg)';
                 playerCard.style.backgroundSize = 'contain';
-                computerCard.style.background = 'center url(images/scissors.jpg)';
+                computerCard.style.background = 'center url(images/Scissors.jpg)';
                 computerCard.style.backgroundSize = 'contain';
             }
             else if (compGuess == 'rock') {
                 console.log('Computer Wins - rock beats scissors')
                 winCount.innerHTML = 'Computer Wins - rock beats scissors';
-                playerCard.style.background = 'center url(images/scissors.jpg)';
+                playerCard.style.background = 'center url(images/Scissors.jpg)';
                 playerCard.style.backgroundSize = 'contain';
-                computerCard.style.background = 'center url(images/rock.jpeg)';
+                computerCard.style.background = 'center url(images/Rock.jpg)';
                 computerCard.style.backgroundSize = 'contain';
                 //
                 cScore = cScore + 1;
@@ -161,9 +162,9 @@ function round () {
             else if (compGuess == 'paper') {
                 console.log('Player Wins - scissors beat paper')
                 winCount.innerHTML = 'Player Wins - scissors beat paper';
-                playerCard.style.background = 'center url(images/scissors.jpg)';
+                playerCard.style.background = 'center url(images/Scissors.jpg)';
                 playerCard.style.backgroundSize = 'contain';
-                computerCard.style.background = 'center url(images/paper.png)';
+                computerCard.style.background = 'center url(images/Paper.jpg)';
                 computerCard.style.backgroundSize = 'contain';
                 //
                 pScore = pScore + 1;
@@ -181,11 +182,14 @@ function round () {
             gameOver.innerHTML = 'Game Over Player Wins';
             round = null;
             playAgain.style.visibility = "unset"
+            back.style.background = 'green'
         }
         else if  (cScore > 4) {
             console.log('Game Over');
             gameOver.innerHTML = 'Game Over Computer Wins';
             round = null;
             playAgain.style.visibility = "unset"
+            back.style.background = 'red'
         }        
 }    
+
